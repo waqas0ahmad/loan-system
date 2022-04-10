@@ -1,4 +1,4 @@
-<div class="main-content">
+<!-- <div class="main-content" *ngIf="number==1" >
     <h2>Congragulations! What’s the address of your new home?</h2>
     <div class="button-list col-lg-6 offset-lg-3 col-sm-12 col-xs-12 col-md-12">
       <form action="" id="address">
@@ -19,17 +19,17 @@
         </div>
       </form>
       
-      <a href="5  Apply Now  I’m Purchasing.html" class="btn btn-primary btn-next btn-orange" role="button">Next</a>
+      <a [routerLink]="['/purchase/purchasing-no',2]" class="btn btn-primary btn-next btn-orange" role="button">Next</a>
     </div>
     <div class="content-footer">
       <p>Already have an account | <a href="">Log in</a></p>
       <h5>You have Questions? <span>|</span> We’ll have answers.</h5>
     </div>
-  </div>
+</div> -->
   
   
   <!--No# 4 Purchasing  Start -->
-  <div class="main-content">
+  <div class="main-content" *ngIf="number==2">
     <h2>Congragulations! What’s the address of your new home?</h2>
     <div class="button-list col-lg-6 offset-lg-3 col-sm-12 col-xs-12 col-md-12">
       <form action="" id="address">
@@ -50,7 +50,7 @@
         </div>
       </form>
       
-      <a href="5  Apply Now  I’m Purchasing.html" class="btn btn-primary btn-next btn-orange" role="button">Next</a>
+      <a [routerLink]="['/purchase/purchasing-no',3]" class="btn btn-primary btn-next btn-orange" role="button">Next</a>
     </div>
     <div class="content-footer">
       <p>Already have an account | <a href="">Log in</a></p>
@@ -61,7 +61,7 @@
 
 
     <!-- No# 5 Purchasing Start -->
-<div class="main-content">
+<div class="main-content" *ngIf="number==3">
               <h2 class="little-space">Please give us a few details about your contract</h2>
               <h6>if you don’t knoe all the details, that’s okay. We can add those letter. <i class="fa-solid fa-circle-info"></i></h6>
               <div class="button-list col-lg-6 offset-lg-3 col-sm-12 col-xs-12 col-md-12">
@@ -82,11 +82,11 @@
                 <div class="row">
                     <div class="col-lg-3 offset-lg-3 col-md-12 col-sm-12 col-xs-12">
                         
-                        <a href="4  Apply Now  I’m Purchasing.html" class="btn" id="btn-back" role="button">Back</a>
+                        <a [routerLink]="['/purchase/purchasing-no',2]" class="btn" id="btn-back" role="button">Back</a>
                     </div>
                     <div class="col-lg-2">
                         
-                        <a href="6  Apply Now  I’m Purchasing.html" class="btn" id="btn-next">Next</a>
+                        <a [routerLink]="['/purchase/purchasing-no',4]" class="btn" id="btn-next">Next</a>
                     </div>
                 </div>
               </div>
@@ -99,7 +99,7 @@
 
 
     <!-- No# 6 Purchasing Start -->
-    <div class="main-content">
+    <div class="main-content" *ngIf="number==4">
         <h2 class="little-space">Congratulations! What’s the purchase price?</h2>
         
         <div class="button-list col-lg-6 offset-lg-3 col-sm-12 col-xs-12 col-md-12">
@@ -120,11 +120,11 @@
           <div class="row">
               <div class="col-md-3 offset-md-3">
                   
-                  <a href="5  Apply Now  I’m Purchasing.html" class="btn" id="btn-back">Back</a>
+                  <a [routerLink]="['/purchase/purchasing-no',3]" class="btn" id="btn-back">Back</a>
               </div>
               <div class="col-md-2">
                   
-                  <a href="7  Apply Now  I’m Purchasing.html" class="btn" id="btn-next">Next</a>
+                  <a [routerLink]="['/purchase/purchasing-no',5]" class="btn" id="btn-next">Next</a>
               </div>
           </div>
         </div>
@@ -136,26 +136,26 @@
     <!-- No# 6 Purchasing End -->
 
     <!-- No# 7 Purchasing Start -->
-    <div class="main-content">
+    <div class="main-content" *ngIf="number==5">
         <h2 class="little-space">Do you know your credit score?</h2>
         <h6>We Use this into to match you with the perfect load options.</h6>
         <div class="button-list margin-top col-lg-6 offset-lg-3 col-sm-12 col-xs-12 col-md-12">
           
           
-          <a href="8 Apply Now  I’m Purchasing.html" class="btn btn-primary btn-style btn-orange">Excellent (740+)</a>
+          <a [routerLink]="['/purchase/purchasing-no',6]" class="btn btn-primary btn-style btn-orange">Excellent (740+)</a>
           
-          <a href="8 Apply Now  I’m Purchasing.html" class="btn btn-primary btn-style btn-orange">Good(700 - 739)</a>
+          <a [routerLink]="['/purchase/purchasing-no',6]" class="btn btn-primary btn-style btn-orange">Good(700 - 739)</a>
           
-          <a href="8 Apply Now  I’m Purchasing.html" class="btn btn-primary btn-style btn-orange">Average (640 - 699)</a>
+          <a [routerLink]="['/purchase/purchasing-no',6]" class="btn btn-primary btn-style btn-orange">Average (640 - 699)</a>
           
-          <a href="8 Apply Now  I’m Purchasing.html" class="btn btn-primary btn-style btn-orange">Fair (580 - 639)</a>
+          <a [routerLink]="['/purchase/purchasing-no',6]" class="btn btn-primary btn-style btn-orange">Fair (580 - 639)</a>
           
-          <a href="8 Apply Now  I’m Purchasing.html" class="btn btn-primary btn-style btn-orange">Needs Improvement (less then 580)</a>
+          <a [routerLink]="['/purchase/purchasing-no',6]" class="btn btn-primary btn-style btn-orange">Needs Improvement (less then 580)</a>
 
           <div class="row">
               <div class="col-md-12">
                   
-                  <a href="6  Apply Now  I’m Purchasing.html" class="btn" id="btn-back">Back</a>
+                  <a [routerLink]="['/purchase/purchasing-no',4]" class="btn" id="btn-back">Back</a>
               </div>
           </div>
         </div>
@@ -167,7 +167,7 @@
     <!-- No# 7 Purchasing End -->
 
     <!-- No# 8 Purchasing Start -->
-    <div class="main-content">
+    <div class="main-content" *ngIf="number==6">
         <h2 class="little-space">Ok! We’s like to get to know you.</h2>
         <h6>Please provide you full legal name.</h6>
         <div class="button-list margin-top col-lg-6 offset-lg-3 col-sm-12 col-xs-12 col-md-12">
@@ -200,11 +200,11 @@
           <div class="row">
               <div class="col-md-3 offset-md-3">
                   
-                  <a href="7  Apply Now  I’m Purchasing.html" class="btn btn-orange" id="btn-back">Back</a>
+                  <a [routerLink]="['/purchase/purchasing-no',5]" class="btn btn-orange" id="btn-back">Back</a>
               </div>
               <div class="col-md-2">
                   
-                  <a href="9  Apply Now  I’m Purchasing.html" class="btn btn-orange" id="btn-next">Next</a>
+                  <a [routerLink]="['/purchase/purchasing-no',7]" class="btn btn-orange" id="btn-next">Next</a>
               </div>
           </div>
         </div>
@@ -216,26 +216,22 @@
     <!-- No# 8 Purchasing End -->
 
     <!-- No# 9 Purchasing Start -->
-    <div class="main-content">
+    <div class="main-content" *ngIf="number==7">
         <h2 class="little-space">What type of home is it? <img src="img/info.svg" alt=""></h2>
       
         <div class="button-list col-lg-6 offset-lg-3 col-sm-12 col-xs-12 col-md-12">
           
           
-          <a href="10  Apply Now  I’m Purchasing.html" class="btn btn-primary btn-style btn-orange">Single Family</a>
-          
-          <a href="10  Apply Now  I’m Purchasing.html" class="btn btn-primary btn-style btn-orange">Condo</a>
-          
-          <a href="10  Apply Now  I’m Purchasing.html" class="btn btn-primary btn-style btn-orange">Co-op</a>
-          
-          <a href="10  Apply Now  I’m Purchasing.html" class="btn btn-primary btn-style btn-orange">Townhome</a>
-          
-          <a href="10  Apply Now  I’m Purchasing.html" class="btn btn-primary btn-style btn-orange">Multi-Family</a>
+          <a [routerLink]="['/purchase/purchasing-no',8]" class="btn btn-primary btn-style btn-orange">Single Family</a>          
+          <a [routerLink]="['/purchase/purchasing-no',8]" class="btn btn-primary btn-style btn-orange">Condo</a>          
+          <a [routerLink]="['/purchase/purchasing-no',8]" class="btn btn-primary btn-style btn-orange">Co-op</a>          
+          <a [routerLink]="['/purchase/purchasing-no',8]" class="btn btn-primary btn-style btn-orange">Townhome</a>          
+          <a [routerLink]="['/purchase/purchasing-no',8]" class="btn btn-primary btn-style btn-orange">Multi-Family</a>
 
           <div class="row">
               <div class="col-md-12">
                   
-                  <a href="8 Apply Now  I’m Purchasing.html" class="btn btn-orange" id="btn-back">Back</a>
+                  <a [routerLink]="['/purchase/purchasing-no',6]" class="btn btn-orange" id="btn-back">Back</a>
               </div>
           </div>
         </div>
@@ -247,7 +243,7 @@
     <!-- No# 9 Purchasing End -->
 
     <!-- No# 10 Purchasing Start -->
-    <div class="main-content">
+    <div class="main-content" *ngIf="number==8">
         <h2>For the properties you’ve been looking at, are there typically HOA fees? <img src="img/info.svg" alt=""></h2>
         <h6>if so, what is the approximate amount?</h6>
         <div class="button-list col-lg-6 offset-lg-3 col-sm-12 col-xs-12 col-md-12">
@@ -259,15 +255,15 @@
           <div class="row margin-top">
               <div class="col-md-2 offset-md-1 col-lg-2 offset-lg-1 col-sm-2 offset-sm-1 col-xs-2 offset-xs-1">
                   
-                  <a href="9  Apply Now  I’m Purchasing.html" class="btn btn-orange" id="btn-back">Back</a>
+                  <a [routerLink]="['/purchase/purchasing-no',7]" class="btn btn-orange" id="btn-back">Back</a>
               </div>
               <div class="col-md-2 offset-md-1 col-lg-2 offset-lg-1 col-sm-2 offset-sm-1 col-xs-2 offset-xs-1">
                   
-                  <a href="11 Apply Now  I’m Purchasing.html" class="btn btn-orange" id="btn-next">Next</a>
+                  <a [routerLink]="['/purchase/purchasing-no',9]" class="btn btn-orange" id="btn-next">Next</a>
               </div>
               <div class="col-md-2 offset-md-1 col-lg-2 offset-lg-1 col-sm-2 offset-sm-1 col-xs-2 offset-xs-1">
                   
-                  <a href="11 Apply Now  I’m Purchasing.html" class="btn btn-orange" id="btn-back">Skip</a>
+                  <a [routerLink]="['/purchase/purchasing-no',9]" class="btn btn-orange" id="btn-back">Skip</a>
               </div>
           </div>
         </div>
@@ -279,22 +275,22 @@
     <!-- No# 10 Purchasing End -->
 
     <!-- No# 11 Purchasing Start -->
-    <div class="main-content">
+    <div class="main-content" *ngIf="number==9">
         <h2 class="little-space">OK great! And how do you plan on using your new home?</h2>
       
         <div class="button-list col-lg-6 offset-lg-3 col-sm-12 col-xs-12 col-md-12">
           
           
-          <a href="(MILITARY OPTION) 12  Apply Now  I’m Purchasing  Yes.html" class="btn btn-primary btn-style btn-orange">Primary Residance</a>
+          <a [routerLink]="['/purchase/purchase-non-mil']" class="btn btn-primary btn-style btn-orange">Primary Residance</a>
           
-          <a href="(MILITARY OPTION) 12  Apply Now  I’m Purchasing  Yes.html" class="btn btn-primary btn-style btn-orange">Condo</a>
+          <a [routerLink]="['/purchase/purchase-non-mil']" class="btn btn-primary btn-style btn-orange">Condo</a>
           
-          <a href="(MILITARY OPTION) 12  Apply Now  I’m Purchasing  Yes.html" class="btn btn-primary btn-style btn-orange">Co-op</a>
+          <a [routerLink]="['/purchase/purchase-non-mil']" class="btn btn-primary btn-style btn-orange">Co-op</a>
 
           <div class="row">
               <div class="col-md-12">
                   
-                  <a href="10  Apply Now  I’m Purchasing.html" class="btn" id="btn-back">Back</a>
+                  <a [routerLink]="['/purchase/purchasing-no',8]" class="btn" id="btn-back">Back</a>
               </div>
           </div>
         </div>

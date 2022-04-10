@@ -1,6 +1,6 @@
 <!-- Page no17 Property Info by clicking No option on purchase-non-mil component -->
 
-<div class="main-content">
+<div class="main-content" *ngIf="isEdit!=true">
     <h2>Let's take a few seconds to review and confirm your info so far.</h2>
     <div class="content-area">
       <div class="row">
@@ -9,7 +9,7 @@
         </div>
         <div class="col-md-4 right-align">
           
-          <a href="(N0N MILITARY) 17A  Apply Now  I’m Purchasing  Property Info  Edit info.html" class="btn" id="btn-edit">Edit</a>
+          <a class="btn" id="btn-edit" (click)="isEdit=true">Edit</a>
         </div>
       </div>
       <div class="row">
@@ -43,11 +43,11 @@
       <div class="row">
           <div class="col-md-3 offset-md-3">
               
-              <a href="NO BUTTON ACTION (N0N MILITARY OPTION) 16  Apply Now  I’m Purchasing.html" class="btn" id="btn-back">Back</a>
+              <a [routerLink]="['/purchase/purchase-non-mil']" class="btn" id="btn-back">Back</a>
           </div>
           <div class="col-md-2">
-              
-              <a href="(N0N MILITARY) 18  Apply Now  I’m Purchasing  Personal Info.html" class="btn" id="btn-next">Next</a>
+            
+              <a [routerLink]="['/purchase/purchase-mil-info',1]" class="btn" id="btn-next">Next</a>
           </div>
       </div>
     </div>
@@ -60,7 +60,7 @@
 
   <!-- Click Edit Button will show the below content of 17A page -->
 
-  <div class="main-content">
+  <div class="main-content" *ngIf="isEdit==true">
     <h2>Let's take a few seconds to review and confirm your info so far.</h2>
     <div class="content-area">
       <div class="row padding-fifteen">
@@ -69,7 +69,7 @@
         </div>
         <div class="col-md-4 right-align">
           
-          <a href="(N0N MILITARY OPTION) 17 Apply Now  I’m Purchasing Property Info.html" class="btn" id="btn-edit">Done</a>
+          <a (click)="isEdit=false" class="btn" id="btn-edit">Done</a>
         </div>
       </div>
     </div>

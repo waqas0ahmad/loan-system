@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./purchase-prop-info17.component.css']
 })
 export class PurchasePropInfo17Component implements OnInit {
-
+  isEdit=false;
   constructor() { }
 
   ngOnInit() {

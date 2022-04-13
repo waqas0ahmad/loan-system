@@ -1,7 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { ApplyNowComponent } from './apply-now/apply-now.component';
+import { AssetsInfoComponent } from './assets-info/assets-info.component';
+import { GovernmentComponent } from './government/government.component';
+import { IncomeInfoComponent } from './income-info/income-info.component';
 import { IndexComponent } from './index.component';
+import { PropertyInfoComponent } from './property-info/property-info.component';
 import { PurchaseMilitaryInfoComponent } from './purchase-military-info/purchase-military-info.component';
 import { PurchaseMilitaryPersonalComponent } from './purchase-military-personal/purchase-military-personal.component';
 import { PurchaseNoComponent } from './purchase-no/purchase-no.component';
@@ -12,6 +16,7 @@ import { PurchaseYesMilComponent } from './purchase-yes-mil/purchase-yes-mil.com
 import { PurchaseYesComponent } from './purchase-yes/purchase-yes.component';
 import { PurchasingYesComponent } from './purchasing-yes/purchasing-yes.component';
 import { SignedPurchaseComponent } from './signed-purchase/signed-purchase.component';
+import { WelcomeComponent } from './welcome/welcome.component';
 
 
 const routes: Routes = [{
@@ -19,6 +24,21 @@ const routes: Routes = [{
     {
       path: "", component: ApplyNowComponent,
 
+    },
+    {
+      path:"welcome/:number",component:WelcomeComponent
+    },
+    {
+      path:"property-info/:number",component:PropertyInfoComponent
+    },
+    {
+      path:"income-info/:number",component:IncomeInfoComponent
+    },
+    {
+      path:"assets-info/:number",component:AssetsInfoComponent
+    },
+    {
+      path:"gov/:number",component:GovernmentComponent
     },
     {
       path: "signed-purchase", component: SignedPurchaseComponent

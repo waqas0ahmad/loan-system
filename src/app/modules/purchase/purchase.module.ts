@@ -27,11 +27,16 @@ import { PurchaseIncomeSource27Component } from './purchase-income-source27/purc
 import { PurchaseAssets28Component } from './purchase-assets28/purchase-assets28.component';
 import { PurchaseGovernment29Component } from './purchase-government29/purchase-government29.component';
 import { PurchaseCreditScore30Component } from './purchase-credit-score30/purchase-credit-score30.component';
+import { WelcomeComponent } from './welcome/welcome.component';
+import { PropertyInfoComponent } from './property-info/property-info.component';
+import { IncomeInfoComponent } from './income-info/income-info.component';
+import { AssetsInfoComponent } from './assets-info/assets-info.component';
+import { GovernmentComponent } from './government/government.component';
 //import { ApplyNowRefinanceComponent } from './apply-now-refinance/apply-now-refinance.component';
 
 
 @NgModule({
-  declarations: [IndexComponent, ApplyNowComponent, SignedPurchaseComponent, PurchasingYesComponent, PurchaseYesComponent, PurchaseNoComponent, PurchaseYesMilComponent, PurchasePropYesComponent, PurchaseMilitaryInfoComponent, PurchaseMilitaryPersonalComponent, PurchaseNonMilComponent, PurchasePropInfo17Component, PurchasePersonalInfo18Component, PurchaseNon19Component, PurchaseOnmyOwn20Component, PurchaseSeparate21Component, PurchaseDependants22Component, PurchaseOwnRentOth23Component, PurchaseMonthlyExpenses24Component, PurchasePersonalInfoEdit25Component, PurchaseIncome26Component, PurchaseIncomeSource27Component, PurchaseAssets28Component, PurchaseGovernment29Component, PurchaseCreditScore30Component],
+  declarations: [IndexComponent, ApplyNowComponent, SignedPurchaseComponent, PurchasingYesComponent, PurchaseYesComponent, PurchaseNoComponent, PurchaseYesMilComponent, PurchasePropYesComponent, PurchaseMilitaryInfoComponent, PurchaseMilitaryPersonalComponent, PurchaseNonMilComponent, PurchasePropInfo17Component, PurchasePersonalInfo18Component, PurchaseNon19Component, PurchaseOnmyOwn20Component, PurchaseSeparate21Component, PurchaseDependants22Component, PurchaseOwnRentOth23Component, PurchaseMonthlyExpenses24Component, PurchasePersonalInfoEdit25Component, PurchaseIncome26Component, PurchaseIncomeSource27Component, PurchaseAssets28Component, PurchaseGovernment29Component, PurchaseCreditScore30Component, WelcomeComponent, PropertyInfoComponent, IncomeInfoComponent, AssetsInfoComponent, GovernmentComponent],
   imports: [
     CommonModule,
     PurchaseRoutingModule

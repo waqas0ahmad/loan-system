@@ -1,4 +1,4 @@
-<div class="main-content">
+<div class="main-content" *ngIf="number==1">
     <h2>Now tell us about your assets.</h2>
     <h6>if you’re not exactly sure, your best guess is fine.</h6>
     <div class="button-list margin-top col-lg-6 offset-lg-3 col-sm-12 col-xs-12 col-md-12">
@@ -16,15 +16,15 @@
       <div class="row margin-top">
           <div class="col-md-2 offset-md-1">
               
-              <a href="(N0N MILITARY OPTION) 32  Apply Now I’m Refinancing  Personal Info  Income  co-borrower income Review.html" class="btn" id="btn-back-blue">Back</a>
+              <a (click)="history.back()" class="btn" id="btn-back-blue">Back</a>
           </div>
           <div class="col-md-2 offset-md-1">
               
-              <a href="(N0N MILITARY OPTION) 34  Apply Now I’m Refinancing  Assets  Other Assets.html" class="btn" id="btn-next-blue">Next</a>
+              <a routerLink="/refinance/assets-info/2" class="btn" id="btn-next-blue">Next</a>
           </div>
           <div class="col-md-2 offset-md-1">
               
-              <a href="(N0N MILITARY OPTION) 34  Apply Now I’m Refinancing  Assets  Other Assets.html" class="btn" id="btn-back-blue">Skip</a>
+              <a routerLink="/refinance/assets-info/2" class="btn" id="btn-back-blue">Skip</a>
           </div>
       </div>
     </div>
@@ -33,17 +33,18 @@
       <h5>You have Questions? <span>|</span> We’ll have answers.</h5>
     </div>
   </div>
-  <div class="main-content">
+
+  <div class="main-content" *ngIf="number==2">
     <h2>Thanks! Do you have any other assets you’d like to share?</h2>
     <div class="button-list margin-top col-lg-6 offset-lg-3 col-sm-12 col-xs-12 col-md-12">
-      <a href="(N0N MILITARY)  34B  Apply Now  I’m Purchasing  Assets  Review  Edits.html" class="btn btn-primary btn-style btn-blue">Yes</a>
-      <a href="(N0N MILITARY) 35  Apply Now  I’m Purchasing  Government.html" class="btn btn-primary btn-style btn-blue">No</a>
+      <a routerLink="/refinance/assets-info/3" class="btn btn-primary btn-style btn-blue">Yes</a>
+      <a routerLink="/refinance/gov/1" class="btn btn-primary btn-style btn-blue">No</a>
       <div class="row">
           <div class="col-md-3 offset-md-3">
-              <a href="(N0N MILITARY OPTION) 33  Apply Now I’m Refinancing   Assets.html" class="btn" id="btn-back-blue">Back</a>
+              <a routerLink="/refinance/assets-info/1" class="btn" id="btn-back-blue">Back</a>
           </div>
           <div class="col-md-2">
-              <a href="(N0N MILITARY)  34B  Apply Now  I’m Purchasing  Assets  Review  Edits.html" class="btn" id="btn-next-blue">Next</a>
+              <a routerLink="/refinance/assets-info/3" class="btn" id="btn-next-blue">Next</a>
           </div>
       </div>
     </div>
@@ -52,13 +53,8 @@
       <h5>You have Questions? <span>|</span> We’ll have answers.</h5>
     </div>
   </div>
-  <!-- click yes/next it will goto section 34B -->
-  <!-- click no it will goto page 35 apply-now-purchase-gov35 -->
-  <!-- click back it will goto page 33 apply-now-assets33 -->
 
-
- <!-- section 34B starts -->
- <div class="main-content">
+ <div class="main-content" *ngIf="number==3">
     <h2>Let’s review and comfirm your assets.</h2>
     <div class="content-area">
       <div class="row">
@@ -67,7 +63,7 @@
         </div>
         <div class="col-md-4 right-align">
           
-          <a href="(N0N MILITARY) 34C  Apply Now  I’m Purchasing  Assets   Done.html" class="btn" id="btn-edit">Edit</a>
+          <a routerLink="/refinance/assets-info/4" class="btn" id="btn-edit">Edit</a>
         </div>
       </div>
       <div class="row">
@@ -97,11 +93,9 @@
       <h5>You have Questions? <span>|</span> We’ll have answers.</h5>
     </div>
   </div>
-<!-- section 34B ends -->
-<!-- click edit it will goto 34C section -->
 
-<!-- section 34C starts -->
-<div class="main-content">
+  
+<div class="main-content" *ngIf="number==4">
     <h2>Let’s review and comfirm your assets.</h2>
     <div class="content-area">
       <div class="row">
@@ -110,7 +104,7 @@
         </div>
         <div class="col-md-4 right-align">
           
-          <a href="(N0N MILITARY)  34B  Apply Now  I’m Purchasing  Assets  Review  Edits.html" class="btn" id="btn-edit">Done</a>
+          <a routerLink="/refinance/assets-info/3" class="btn" id="btn-edit">Done</a>
         </div>
       </div>
       <div class="row">
@@ -132,7 +126,7 @@
       <div class="row">
           <div class="col-md-3 offset-md-3">
               
-              <a href="(N0N MILITARY)  34B  Apply Now  I’m Purchasing  Assets  Review  Edits.html" class="btn" id="btn-back-blue">Back</a>
+              <a routerLink="/refinance/assets-info/2" class="btn" id="btn-back-blue">Back</a>
           </div>
           <div class="col-md-2">
               
@@ -145,6 +139,3 @@
       <h5>You have Questions? <span>|</span> We’ll have answers.</h5>
     </div>
   </div>
-<!-- section 34C ends -->
-<!-- click back/done button it will goto 34B -->
-<!-- click on next button in section 34C it will goto page 35 apply-now-purchase-gov35  -->

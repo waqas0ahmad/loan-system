@@ -1,4 +1,4 @@
-<div class="main-content">
+<div class="main-content" *ngIf="number==1">
     <h2>Great now what's the address of the home you're refinancing?</h2>
     <div class="button-list col-lg-6 offset-lg-3 col-sm-12 col-xs-12 col-md-12">
       <form action="" id="address">
@@ -27,11 +27,11 @@
       <div class="row">
           <div class="col-lg-3 offset-lg-3 col-md-12 col-sm-12 col-xs-12">
               
-              <a routerLink="/refinance/" class="btn btn-blue" id="btn-back-blue">Back</a>
+              <a routerLink="/refinance/welcome/2" class="btn btn-blue" id="btn-back-blue">Back</a>
           </div>
           <div class="col-lg-2">
               
-              <a routerLink="/refinance/apply-now-hoem-address" class="btn btn-blue" id="btn-next-blue">Next</a>
+              <a routerLink="/refinance/property-info/2" class="btn btn-blue" id="btn-next-blue">Next</a>
           </div>
       </div>
     </div>
@@ -40,7 +40,7 @@
       <h5>You have Questions? <span>|</span> We’ll have answers.</h5>
     </div>
   </div>
-  <div class="main-content">
+  <div class="main-content" *ngIf="number==2">
     <h2 id="padding-zero" class="little-space">Tell us a little bit more about your home.</h2>
     <h6>If you don't know exactly your best guess is fine.</h6>
     <div class="button-list margin-top extra-margin col-lg-6 offset-lg-3 col-sm-12 col-xs-12 col-md-12">
@@ -57,11 +57,11 @@
       <div class="row">
           <div class="col-md-3 offset-md-3">
               
-              <a routerLink="/refinance/apply-now-property-info" class="btn" id="btn-back-blue">Back</a>
+              <a routerLink="/refinance/property-info/1" class="btn" id="btn-back-blue">Back</a>
           </div>
           <div class="col-md-2">
               
-              <a routerLink="/refinance/apply-now-property-info6" class="btn" id="btn-next-blue">Next</a>
+              <a routerLink="/refinance/property-info/3" class="btn" id="btn-next-blue">Next</a>
           </div>
       </div>
     </div>
@@ -70,23 +70,22 @@
       <h5>You have Questions? <span>|</span> We’ll have answers.</h5>
     </div>
   </div>
-  <div class="main-content">
+  <div class="main-content" *ngIf="number==3">
     <h2 class="little-space">Do you know your credit score?</h2>
     <h6>We Use this into to match you with the perfect load options.</h6>
     <div class="button-list margin-top col-lg-6 offset-lg-3 col-sm-12 col-xs-12 col-md-12">
       
       
-      <a routerLink="/refinance/apply-now-property-info7" class="btn btn-primary btn-style btn-blue">Excellent (740+)</a>
-      
-      <a routerLink="/refinance/apply-now-property-info7" class="btn btn-primary btn-style btn-blue">Good(700 - 739)</a>      
-      <a routerLink="/refinance/apply-now-property-info7" class="btn btn-primary btn-style btn-blue">Average (640 - 699)</a>      
-      <a routerLink="/refinance/apply-now-property-info7" class="btn btn-primary btn-style btn-blue">Fair (580 - 639)</a>      
-      <a routerLink="/refinance/apply-now-property-info7" class="btn btn-primary btn-style btn-blue">Needs Improvement (less then 580)</a>
+      <a routerLink="/refinance/property-info/4" class="btn btn-primary btn-style btn-blue">Excellent (740+)</a>
+      <a routerLink="/refinance/property-info/4" class="btn btn-primary btn-style btn-blue">Good(700 - 739)</a>      
+      <a routerLink="/refinance/property-info/4" class="btn btn-primary btn-style btn-blue">Average (640 - 699)</a>      
+      <a routerLink="/refinance/property-info/4" class="btn btn-primary btn-style btn-blue">Fair (580 - 639)</a>      
+      <a routerLink="/refinance/property-info/4" class="btn btn-primary btn-style btn-blue">Needs Improvement (less then 580)</a>
 
       <div class="row">
           <div class="col-md-12">
               
-              <a routerLink="/refinance/apply-now-hoem-address" class="btn" id="btn-back-blue">Back</a>
+              <a routerLink="/refinance/property-info/2" class="btn" id="btn-back-blue">Back</a>
           </div>
       </div>
     </div>
@@ -95,26 +94,22 @@
       <h5>You have Questions? <span>|</span> We’ll have answers.</h5>
     </div>
   </div>
-  <div class="main-content">
+  <div class="main-content" *ngIf="number==4">
     <h2 class="little-space">What type of home is it? <img src="img/info.svg" alt=""></h2>
   
     <div class="button-list col-lg-6 offset-lg-3 col-sm-12 col-xs-12 col-md-12">
       
       
-      <a href="7B Apply Now-I’m Refinancing  Property Info  Association dues.html" class="btn btn-primary btn-style btn-blue">Single Family</a>
-      
-      <a href="7B Apply Now-I’m Refinancing  Property Info  Association dues.html" class="btn btn-primary btn-style btn-blue">Condo</a>
-      
-      <a href="7B Apply Now-I’m Refinancing  Property Info  Association dues.html" class="btn btn-primary btn-style btn-blue">Co-op</a>
-      
-      <a href="7B Apply Now-I’m Refinancing  Property Info  Association dues.html" class="btn btn-primary btn-style btn-blue">Townhome</a>
-      
-      <a href="7B Apply Now-I’m Refinancing  Property Info  Association dues.html" class="btn btn-primary btn-style btn-blue">Multi-Family</a>
+      <a routerLink="/refinance/property-info/5" class="btn btn-primary btn-style btn-blue">Single Family</a>      
+      <a routerLink="/refinance/property-info/5" class="btn btn-primary btn-style btn-blue">Condo</a>
+      <a routerLink="/refinance/property-info/5" class="btn btn-primary btn-style btn-blue">Co-op</a>      
+      <a routerLink="/refinance/property-info/5" class="btn btn-primary btn-style btn-blue">Townhome</a>      
+      <a routerLink="/refinance/property-info/5" class="btn btn-primary btn-style btn-blue">Multi-Family</a>
 
       <div class="row">
           <div class="col-md-12">
               
-              <a href="6  Apply Now-I’m Refinancing  Property Info.html" class="btn" id="btn-back-blue">Back</a>
+              <a routerLink="/refinance/property-info/3" class="btn" id="btn-back-blue">Back</a>
           </div>
       </div>
     </div>
@@ -124,13 +119,8 @@
     </div>
   </div>
 
-  <!-- click on back button it will go to page 6 apply-now-property-info6 -->
-  <!-- click on any other button it will go to section 7B -->
-
-  <!-- click on back button in 7B it will go to apply-now-property-info7 -->
-  <!-- click next or skip button it will move to section 7C -->
-  <!-- section 7B starts -->
-  <div class="main-content">
+ 
+  <div class="main-content" *ngIf="number==5">
     <h2>What are your monthly Homeowners Association dues?</h2>
     
     <div class="button-list col-lg-6 offset-lg-3 col-sm-12 col-xs-12 col-md-12">
@@ -142,15 +132,15 @@
       <div class="row margin-top">
           <div class="col-md-2 offset-md-1 col-lg-2 offset-lg-1 col-sm-2 offset-sm-1 col-xs-2 offset-xs-1">
               
-              <a href="7  Apply Now-I’m Refinancing  Property Info.html" class="btn" id="btn-back-blue">Back</a>
+              <a routerLink="/refinance/property-info/4" class="btn" id="btn-back-blue">Back</a>
           </div>
           <div class="col-md-2 offset-md-1 col-lg-2 offset-lg-1 col-sm-2 offset-sm-1 col-xs-2 offset-xs-1">
               
-              <a href="7C Apply Now-I’m Refinancing  Property Info  about your home.html" class="btn" id="btn-next-blue">Next</a>
+              <a routerLink="/refinance/property-info/6" class="btn" id="btn-next-blue">Next</a>
           </div>
           <div class="col-md-2 offset-md-1 col-lg-2 offset-lg-1 col-sm-2 offset-sm-1 col-xs-2 offset-xs-1">
               
-              <a href="7C Apply Now-I’m Refinancing  Property Info  about your home.html" class="btn" id="btn-back-blue">Skip</a>
+              <a routerLink="/refinance/property-info/6" class="btn" id="btn-back-blue">Skip</a>
           </div>
       </div>
     </div>
@@ -159,12 +149,8 @@
       <h5>You have Questions? <span>|</span> We’ll have answers.</h5>
     </div>
   </div>
-  <!-- section 7B ends -->
-
-  <!-- click back it will goto section 7B -->
-  <!-- click on next button it will goto section 7D -->
-  <!-- section 7C starts -->
-  <div class="main-content">
+ 
+  <div class="main-content" *ngIf="number==6">
     <h2 class="little-space">Tell us a little bit more about your home.</h2>
     <h6>If you don't know exactly your best guess is fine.</h6>
     <div class="button-list margin-top col-lg-6 offset-lg-3 col-sm-12 col-xs-12 col-md-12">
@@ -179,11 +165,11 @@
       <div class="row">
           <div class="col-md-3 offset-md-3">
               
-              <a href="7B Apply Now-I’m Refinancing  Property Info  Association dues.html" class="btn" id="btn-back-blue">Back</a>
+              <a routerLink="/refinance/property-info/5" class="btn" id="btn-back-blue">Back</a>
           </div>
           <div class="col-md-2">
               
-              <a href="7D Apply Now-I’m Refinancing Property Info  currently using your home.html" class="btn" id="btn-next-blue">Next</a>
+              <a routerLink="/refinance/property-info/7" class="btn" id="btn-next-blue">Next</a>
           </div>
       </div>
     </div>
@@ -192,27 +178,21 @@
       <h5>You have Questions? <span>|</span> We’ll have answers.</h5>
     </div>
   </div>
-  <!-- section 7C ends -->
-
-  <!-- click on back button move to section 7C -->
-  <!-- click any other button move to page 8 apply-now-refinance-yes8 -->
-  <!-- section 7D starts -->
-  <div class="main-content">
+  
+  <div class="main-content" *ngIf="number==7">
     <h2 class="narrow-space">How are you currently using your home?</h2>
   
     <div class="button-list col-lg-6 offset-lg-3 col-sm-12 col-xs-12 col-md-12">
       
       
-      <a href="(MILITARY OPTION) 8  Apply Now I’m Refinancing Yes - BUTTON.html" class="btn btn-primary btn-style btn-blue">Primary Residance</a>
-      
-      <a href="(MILITARY OPTION) 8  Apply Now I’m Refinancing Yes - BUTTON.html" class="btn btn-primary btn-style btn-blue">Second Home</a>
-      
-      <a href="(MILITARY OPTION) 8  Apply Now I’m Refinancing Yes - BUTTON.html" class="btn btn-primary btn-style btn-blue">Investment / Rental</a>
+      <a routerLink="/refinance/property-info/8" class="btn btn-primary btn-style btn-blue">Primary Residance</a>
+      <a routerLink="/refinance/property-info/8" class="btn btn-primary btn-style btn-blue">Second Home</a>      
+      <a routerLink="/refinance/property-info/8" class="btn btn-primary btn-style btn-blue">Investment / Rental</a>
 
       <div class="row">
           <div class="col-md-12">
               
-              <a href="7C Apply Now-I’m Refinancing  Property Info  about your home.html" class="btn" id="btn-back-blue">Back</a>
+              <a routerLink="/refinance/property-info/6" class="btn" id="btn-back-blue">Back</a>
           </div>
       </div>
     </div>
@@ -222,21 +202,21 @@
     </div>
   </div>
   <!-- section 7D ends -->
-  <div class="main-content">
+  <div class="main-content" *ngIf="number==8">
     <h2>Are you a current or former member of the US Military?</h2>
     <h6>Active U.S. Military and veterans may be eligible for VA loan options! <img src="img/info.svg" alt=""></h6>
 
     <div class="button-list margin-top col-lg-6 offset-lg-3 col-sm-12 col-xs-12 col-md-12">
       
       
-      <a href="(MILITARY OPTION) 9  Apply Now I’m Refinancing Property Info Edit info Example Form Filds Formating.html" class="btn btn-primary btn-style btn-blue">Yes</a>
+      <a routerLink="/refinance/property-info/9" class="btn btn-primary btn-style btn-blue">Yes</a>
       
-      <a href="(N0N MILITARY OPTION) 12  Apply Now I’m Refinancing  Property Info.html" class="btn btn-primary btn-style btn-blue">No</a>
+      <a routerLink="/refinance/property-info/9" class="btn btn-primary btn-style btn-blue">No</a>
 
       <div class="row">
           <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
               
-              <a href="7D Apply Now-I’m Refinancing Property Info  currently using your home.html" class="btn" id="btn-back-blue">Back</a>
+              <a routerLink="/refinance/property-info/7" class="btn" id="btn-back-blue">Back</a>
           </div>
       </div>
     </div>
@@ -245,7 +225,7 @@
       <h5>You have Questions? <span>|</span> We’ll have answers.</h5>
     </div>
   </div>
-  <div class="main-content">
+  <div class="main-content" *ngIf="number==9">
     <h2>Let's take a few seconds to review and confirm your info so far.</h2>
     <div class="content-area">
       <div class="row">
@@ -254,7 +234,7 @@
         </div>
         <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 right-align">
           
-          <a href="(N0N MILITARY OPTION) 12A  Apply Now I’m Refinancing  Property Info  review and confirm.html" class="btn" id="btn-edit">Edit</a>
+          <a routerLink="/refinance/property-info/10" class="btn" id="btn-edit">Edit</a>
         </div>
       </div>
       <div class="row">
@@ -286,7 +266,7 @@
           </div>
           <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 right-align">
             
-            <a href="(N0N MILITARY OPTION) 12A  Apply Now I’m Refinancing  Property Info  review and confirm.html" class="btn" id="btn-edit">Edit</a>
+            <a routerLink="/refinance/property-info/10" class="btn" id="btn-edit">Edit</a>
           </div>
         </div>
         <div class="row">
@@ -306,11 +286,11 @@
       <div class="row">
           <div class="col-md-3 offset-md-3 col-lg-3 offset-lg-3  col-sm-6 col-xs-6">
               
-              <a href="(MILITARY OPTION) 8  Apply Now I’m Refinancing Yes - BUTTON.html" class="btn" id="btn-back-blue">Back</a>
+              <a routerLink="/refinance/property-info/8" class="btn" id="btn-back-blue">Back</a>
           </div>
           <div class="col-md-2 col-lg-2 col-sm-6 col-xs-6">
               
-              <a href="(N0N MILITARY OPTION) 13  Apply Now  I’m Refinancing  Property Info  REGISTRATION.html" class="btn" id="btn-next-blue">Next</a>
+              <a routerLink="/refinance/property-info/11" class="btn" id="btn-next-blue">Next</a>
           </div>
       </div>
     </div>
@@ -320,13 +300,7 @@
     </div>
   </div>
 
-  <!-- click back move to page 8 apply-now-refinance-yes8 -->
-  <!-- click next button move to page 13 apply-now-prop-info-register13 -->
-
-  <!-- click edit button will move to below section 12A -->
-
-  <!-- 12A starts -->
-  <div class="main-content">
+  <div class="main-content" *ngIf="number==10">
     <h2>Let's take a few seconds to review and confirm your info so far.</h2>
     <div class="content-area">
       <div class="row padding-fifteen">
@@ -458,7 +432,7 @@
   <!-- click back button in section 12A then it will move to upper section 12 -->
   <!-- click on next button it will move to page 13 apply-now-prop-info-register13 -->
 
-  <div class="main-content">
+  <div class="main-content" *ngIf="number==11">
     <h2 id="padding-zero">OK! Now tell us a little bit about yourself.</h2>
     <h6>And for your peace of mind please know we'll never sell your info to 3rd parties.</h6>
     <div class="button-list margin-top col-lg-6 offset-lg-3 col-sm-12 col-xs-12 col-md-12">
@@ -499,10 +473,10 @@
       </form>
       <div class="row">
           <div class="col-md-3 offset-md-3">
-              <button type="button" class="btn" id="btn-back-blue">Back</button>
+              <a routerLink="/refinance/property-info/10" type="button" class="btn" id="btn-back-blue">Back</a>
           </div>
           <div class="col-md-2">
-              <button type="button" class="btn" id="btn-next-blue">Next</button>
+              <a routerLink="/refinance/property-info/12" type="button" class="btn" id="btn-next-blue">Next</a>
           </div>
       </div>
     </div>
@@ -512,7 +486,7 @@
     </div>
   </div>
 
-  <div class="main-content">
+  <div class="main-content" *ngIf="number==12">
     <h2 class="tiny-space">Did someone refer you to EZ Online Mortgage?</h2>
     
     <div class="button-list col-lg-6 offset-lg-3 col-sm-12 col-xs-12 col-md-12">
@@ -524,11 +498,11 @@
       <div class="row">
           <div class="col-md-3 offset-md-3">
               
-              <a href="(N0N MILITARY OPTION) 13  Apply Now  I’m Refinancing  Property Info  REGISTRATION.html" class="btn" id="btn-back-blue">Back</a>
+              <a routerLink="/refinance/property-info/11" class="btn" id="btn-back-blue">Back</a>
           </div>
           <div class="col-md-2">
               
-              <a href="(N0N MILITARY OPTION) 15 Apply Now  I’m Refinancing  Property Info  Applying on  my own.html" class="btn" id="btn-next-blue">Next</a>
+              <a routerLink="/refinance/property-info/13" class="btn" id="btn-next-blue">Next</a>
           </div>
       </div>
     </div>
@@ -541,7 +515,7 @@
     <!-- click next button it will move to page 14 apply-now-prop-info-own15 -->
     <!-- click back button it will move to page 13 apply-now-prop-info-register13 -->
     
-    <div class="main-content">
+    <div class="main-content" *ngIf="number==13">
         <h2>Are you applying on your own, or jointly with another person?</h2>
         <h6 class="narrow-space">if applying with another person, we’ll refer to that person as your co-borrower throughout the applcation.</h6>
         <div class="button-list margin-top col-lg-6 offset-lg-3 col-sm-12 col-xs-12 col-md-12">
@@ -555,7 +529,7 @@
           <div class="row">
               <div class="col-md-12 margin-top">
                   
-                  <a href="(N0N MILITARY OPTION) 14  Apply Now  I’m Refinancing  Property Info  Did someone refer you  YES-BUTTON.html" class="btn" id="btn-back-blue">Back</a>
+                  <a routerLink="/refinance/property-info/12" class="btn" id="btn-back-blue">Back</a>
               </div>
           </div>
         </div>

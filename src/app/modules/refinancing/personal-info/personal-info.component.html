@@ -1,16 +1,16 @@
-<div class="main-content">
+<div class="main-content" *ngIf="number==1">
     <h2>Is the co-borrower your legal spouse?</h2>
     <div class="button-list margin-top col-lg-6 offset-lg-3 col-sm-12 col-xs-12 col-md-12">
       
       
-      <a href="(N0N MILITARY OPTION) 17  Apply Now I’m Refinancing  Personal Info  marital status.html" class="btn btn-primary btn-style btn-blue">Yes</a>
+      <a routerLink="/refinance/personal-info/2" class="btn btn-primary btn-style btn-blue">Yes</a>
       
-      <a href="(N0N MILITARY OPTION) 17  Apply Now I’m Refinancing  Personal Info  marital status.html" class="btn btn-primary btn-style btn-blue">No</a>
+      <a routerLink="/refinance/personal-info/2" class="btn btn-primary btn-style btn-blue">No</a>
       
       <div class="row">
           <div class="col-md-12 margin-top">
               
-              <a href="(N0N MILITARY OPTION) 15 Apply Now  I’m Refinancing  Property Info  Applying on  my own.html" class="btn" id="btn-back-blue">Back</a>
+              <a routerLink="/refinance/property-info/13" class="btn" id="btn-back-blue">Back</a>
           </div>
       </div>
     </div>
@@ -21,16 +21,16 @@
   </div>
   <!-- click on back button will go to apply-now-prop-info-own15 -->
   <!-- click on any button will go to page 17 apply-now-personal-info-marital17 -->
-  <div class="main-content">
+  <div class="main-content" *ngIf="number==2">
     <h2>What’s your current marital status?</h2>
     <div class="button-list margin-top col-lg-6 offset-lg-3 col-sm-12 col-xs-12 col-md-12">
-      <a href="(N0N MILITARY OPTION) 18  Apply Now  I’m Refinancing  Personal Info  How many dependents.html" class="btn btn-primary btn-style btn-blue">Unmarried</a>
-      <a href="(N0N MILITARY OPTION) 18  Apply Now  I’m Refinancing  Personal Info  How many dependents.html" class="btn btn-primary btn-style btn-blue">Married</a>
-      <a href="(N0N MILITARY OPTION) 18  Apply Now  I’m Refinancing  Personal Info  How many dependents.html" class="btn btn-primary btn-style btn-blue">Saparated</a>
+      <a routerLink="/refinance/personal-info/3" class="btn btn-primary btn-style btn-blue">Unmarried</a>
+      <a routerLink="/refinance/personal-info/3" class="btn btn-primary btn-style btn-blue">Married</a>
+      <a routerLink="/refinance/personal-info/3" class="btn btn-primary btn-style btn-blue">Saparated</a>
       <div class="row">
           <div class="col-md-12 margin-top">
               
-              <a href="(N0N MILITARY OPTION) 16  Apply Now I’m Refinancing  Personal Info  Is the co-borrower your legal spouse.html" class="btn" id="btn-back-blue">Back</a>
+              <a routerLink="/refinance/personal-info/1" class="btn" id="btn-back-blue">Back</a>
           </div>
       </div>
     </div>
@@ -43,7 +43,7 @@
   <!-- click on back button will go to apply-now-personal-info-coborrower16 -->
   <!-- click on any other button it will go to page 18 apply-now-personal-info-dependents18 -->
 
-  <div class="main-content">
+  <div class="main-content" *ngIf="number==3">
     <h2 class="little-space">How many dependents will be living in your home?</h2>
     <h6 class="narrow-space">All dependents must be between 0 and 18 years old or must be finnacially dependent upon you, the borrower. Do not include yourself or your spouse.</h6>
     <div class="button-list margin-top col-lg-6 offset-lg-3 col-sm-12 col-xs-12 col-md-12">
@@ -60,13 +60,13 @@
       </div>
       <div class="row margin-top">
           <div class="col-md-2 offset-md-1 col-lg-2 offset-lg-1 col-sm-4 col-xs-4">  
-              <a href="(N0N MILITARY OPTION) 17  Apply Now I’m Refinancing  Personal Info  marital status.html" class="btn" id="btn-back-blue">Back</a>
+              <a routerLink="/refinance/personal-info/2" class="btn" id="btn-back-blue">Back</a>
           </div>
           <div class="col-md-2 offset-md-1 col-lg-2 offset-lg-1 col-sm-4 col-xs-4">
-              <a href="(N0N MILITARY OPTION) 18A  Apply Now  I’m Refinancing  Personal Info  How many dependents (EDITS).html" class="btn" id="btn-next-blue">Next</a>
+              <a routerLink="/refinance/personal-info/4" class="btn" id="btn-next-blue">Next</a>
           </div> 
           <div class="col-md-2 offset-md-1 col-lg-2 offset-lg-1 col-sm-4 col-xs-4">
-              <a href="(N0N MILITARY OPTION) 19  Apply Now I’m Refinancing  Personal Info  Where are you currently living.html" class="btn" id="btn-back-blue">Skip</a>
+              <a routerLink="/refinance/personal-info/4" class="btn" id="btn-back-blue">Skip</a>
           </div>
       </div>
     </div>
@@ -80,7 +80,7 @@
   <!-- click on next button it will go to section 18A -->
   <!-- click on skip button it will go to page 19 apply-now-current-living19 -->
 
-  <div class="main-content">
+  <div class="main-content" *ngIf="number==4">
     <h2>Where are you currently living?</h2>
     <div class="button-list col-lg-8 offset-lg-2 col-sm-12 col-xs-12 col-md-12">
       <form action="" id="address">
@@ -126,21 +126,21 @@
       <div class="row margin-top">
           <div class="col-md-3 offset-md-3">
               
-              <a href="(N0N MILITARY OPTION) 18  Apply Now  I’m Refinancing  Personal Info  How many dependents.html" class="btn" id="btn-back-blue">Back</a>
+              <a routerLink="/refinance/personal-info/3" class="btn" id="btn-back-blue">Back</a>
           </div>
           <div class="col-md-2">
               
-              <a href="(N0N MILITARY OPTION) 20  Apply Now I’m Refinancing  Personal Info  monthly housing expenses.html" class="btn" id="btn-next-blue">Next</a>
+              <a routerLink="/refinance/personal-info/5" class="btn" id="btn-next-blue">Next</a>
           </div>
       </div>
     </div>
     <div class="content-footer">
       <p>Already have an account | <a href="">Log in</a></p>
       <h5>You have Questions? <span>|</span> We’ll have answers.</h5>
-    </div>
+    </div>2
   </div>
 
-  <div class="main-content">
+  <div class="main-content" *ngIf="number==5">
     <h2 id="padding-zero">Tell us about your monthly expenses?</h2>
     <h6>Simply provide your monthly rent.</h6>
     <div class="button-list margin-top extra-margin col-lg-6 offset-lg-3 col-sm-12 col-xs-12 col-md-12">
@@ -150,11 +150,11 @@
       <div class="row">
           <div class="col-md-3 offset-md-3">
               
-              <a href="(N0N MILITARY OPTION) 19  Apply Now I’m Refinancing  Personal Info  Where are you currently living.html" class="btn" id="btn-back-blue">Back</a>
+              <a routerLink="/refinance/personal-info/4" class="btn" id="btn-back-blue">Back</a>
           </div>
           <div class="col-md-2">
               
-              <a href="(N0N MILITARY OPTION) 21  Apply Now I’m Refinancing  Personal Info  Review  (Edit).html" class="btn" id="btn-next-blue">Next</a>
+              <a routerLink="/refinance/personal-info/6" class="btn" id="btn-next-blue">Next</a>
           </div>
       </div>
     </div>
@@ -164,7 +164,7 @@
     </div>
   </div>
 
-  <div class="main-content">
+  <div class="main-content" *ngIf="number==6">
     <h2>Let's take a few seconds to review and confirm your info again.</h2>
     <div class="content-area">
       <div class="row">
@@ -173,7 +173,7 @@
           </div>
           <div class="col-md-4 right-align">
             
-            <a href="(N0N MILITARY OPTION) 21A  Apply Now I’m Refinancing  Personal Info  Review Borrower  CONFIRMENED (Edit).html" class="btn" id="btn-edit">Edit</a>
+            <a routerLink="/refinance/personal-info/7" class="btn" id="btn-edit">Edit</a>
           </div>
         </div>
         <div class="row">
@@ -314,11 +314,11 @@
       <div class="row">
           <div class="col-md-3 offset-md-3">
               
-              <a href="(N0N MILITARY OPTION) 20  Apply Now I’m Refinancing  Personal Info  monthly housing expenses.html" class="btn" id="btn-back-blue">Back</a>
+              <a routerLink="/refinance/personal-info/5" class="btn" id="btn-back-blue">Back</a>
           </div>
           <div class="col-md-2">
               
-              <a href="(N0N MILITARY OPTION) 21B  Apply Now I’m Refinancing  Personal Info  Review Co-Borrower  CONFIRMENED (Edit).html" class="btn" id="btn-next-blue">Next</a>
+              <a routerLink="/refinance/personal-info/8" class="btn" id="btn-next-blue">Next</a>
           </div>
       </div>
     </div>
@@ -333,7 +333,7 @@
   <!-- click on next button it will goto section 21B -->
   
   <!-- section 21A starts -->
-  <div class="main-content">
+  <div class="main-content" *ngIf="number==7">
     <h2>Let's take a few seconds to review and confirm your info again.</h2>
     <div class="content-area text-center">
       <div class="row">
@@ -341,7 +341,7 @@
           <h6>Borrower Information</h6>
         </div>
         <div class="col-md-4 right-align">
-          <button type="button" class="btn" id="btn-edit">Done</button>
+          <a routerLink="/refinance/personal-info/6" type="button" class="btn" id="btn-edit">Done</a>
         </div>
       </div>
       <div class="row">
@@ -622,10 +622,10 @@
     <div class="button-list margin-top col-lg-6 offset-lg-3 col-sm-12 col-xs-12 col-md-12">
       <div class="row">
           <div class="col-md-3 offset-md-3">
-              <button type="button" class="btn" id="btn-back-blue">Back</button>
+              <a routerLink="/refinance/personal-info/5" type="button" class="btn" id="btn-back-blue">Back</a>
           </div>
           <div class="col-md-2">
-              <button type="button" class="btn" id="btn-next-blue">Next</button>
+              <a routerLink="/refinance/personal-info/8" type="button" class="btn" id="btn-next-blue">Next</a>
           </div>
       </div>
     </div>
@@ -638,7 +638,7 @@
 
 
   <!-- section 21B starts -->
-  <div class="main-content">
+  <div class="main-content" *ngIf="number==8">
     <h2 id="padding-zero">OK great! Tell us about your co-borrower.</h2>
     <h6>And for your peace of mind please know we'll never sell your info to 3rd parties.</h6>
     <div class="button-list margin-top col-lg-6 offset-lg-3 col-sm-12 col-xs-12 col-md-12">

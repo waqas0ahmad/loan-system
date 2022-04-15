@@ -1,5 +1,5 @@
 
-<div class="main-content">
+<div class="main-content" *ngIf="number==1">
     <h2>You’re close! In order to proceed please agree to the following.</h2>
     <div class="content-area">
       
@@ -39,11 +39,11 @@
       <div class="row">
           <div class="col-md-3 offset-md-3">
               
-              <a href="(N0N MILITARY) 35A  Apply Now  I’m Purchasing  Government  Almost Done.html" class="btn" id="btn-back-blue">Back</a>
+              <a (click)="history.back()" class="btn" id="btn-back-blue">Back</a>
           </div>
           <div class="col-md-2">
               
-              <a href="(N0N MILITARY) 36A  Apply Now  I’m Purchasing  Credit Scores  Cradit confirmation.html" class="btn" id="btn-next-blue">Next</a>
+              <a routerLink="/refinance/credit-score/2" class="btn" id="btn-next-blue">Next</a>
           </div>
       </div>
     </div>
@@ -53,12 +53,8 @@
     </div>
   </div>
 
-  <!-- click on back button it will go to component apply-now-purchase-gov35 section 35A  -->
-  <!-- click on next button it will goto section 36A -->
-  <!-- section 36A starts -->
 
-  <!-- section 36A ends -->
-  <div class="main-content">
+  <div class="main-content" *ngIf="number==2">
     <h2>Last Step! Cradit confirmation! We’ll provide your cradit scores along with accurate rates and a pre-approval!</h2>
     <div class="button-list col-lg-6 offset-lg-3 col-sm-12 col-xs-12 col-md-12">
       <select class="form-select form-style">
@@ -71,7 +67,7 @@
       <div class="row">
           <div class="col-md-3 offset-md-3">
               
-              <a href="(N0N MILITARY) 36  Apply Now  I’m Purchasing  Credit Scores.html" class="btn" id="btn-back-blue">Back</a>
+              <a routerLink="/refinance/credit-score/1" class="btn" id="btn-back-blue">Back</a>
           </div>
           <div class="col-md-2">
               
@@ -85,6 +81,3 @@
     </div>
   </div>
 
-  <!-- section 36A ends -->
-  <!-- click on back button it will goto upper section 36 -->
-  <!-- click on next button it will goto page 37 apply-now-thanx37 -->

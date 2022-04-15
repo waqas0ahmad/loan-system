@@ -1,4 +1,4 @@
-<div class="main-content">
+<div class="main-content" *ngIf="number==1">
     <h2 class="little-space">The U.S Government requires us to ask these questions.</h2>
     <div class="content-area">
       
@@ -198,11 +198,11 @@
       <div class="row">
           <div class="col-md-3 offset-md-3">
               
-              <a href="(N0N MILITARY)  34B  Apply Now  I’m Purchasing  Assets  Review  Edits.html" class="btn" id="btn-back-blue">Back</a>
+              <a (click)="history.back()" class="btn" id="btn-back-blue">Back</a>
           </div>
           <div class="col-md-2">
               
-              <a href="(N0N MILITARY) 35A  Apply Now  I’m Purchasing  Government  Almost Done.html" class="btn" id="btn-next-blue">Next</a>
+              <a routerLink="/refinance/gov/2" class="btn" id="btn-next-blue">Next</a>
           </div>
       </div>
     </div>
@@ -211,14 +211,9 @@
       <h5>You have Questions? <span>|</span> We’ll have answers.</h5>
     </div>
   </div>
-  <!-- click on back button it will goto section 34B apply-now-other-assets34 -->
-  <!-- click on next button it will goto section 35A of page 35 -->
 
-  <!-- section 35 starts -->
-  <!-- click on next button it will goto page 36 apply-now-credit-score36 -->
-<!-- click on back button it will goto section 35 upper one -->
 
-  <div class="main-content">
+  <div class="main-content" *ngIf="number==2">
     <h2>Almost done! Just a few yes or no questions</h2>
     <div class="yes-no-area">
       <div class="row">
@@ -442,7 +437,7 @@
       <div class="row">
           <div class="col-md-3 offset-md-3">
               
-              <a href="(N0N MILITARY) 35  Apply Now  I’m Purchasing  Government.html" class="btn" id="btn-back-blue">Back</a>
+              <a routerLink="/refinance/gov/1" class="btn" id="btn-back-blue">Back</a>
           </div>
           <div class="col-md-2">
               
@@ -455,4 +450,3 @@
       <h5>You have Questions? <span>|</span> We’ll have answers.</h5>
     </div>
   </div>
-  <!-- section 35A ends -->

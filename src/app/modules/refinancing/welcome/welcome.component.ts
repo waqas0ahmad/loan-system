@@ -8,6 +8,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class WelcomeComponent implements OnInit {
   number:number=1;
+  isEdit=false;
   constructor(private route:ActivatedRoute,private router:Router) { 
     this.route.params.subscribe(x=>{
       if(x.number){

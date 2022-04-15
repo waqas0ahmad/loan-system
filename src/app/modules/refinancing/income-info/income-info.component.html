@@ -1,4 +1,4 @@
-<div class="main-content">
+<div class="main-content" *ngIf="number==1">
     <h2>OK great! Tell us about your co-borrower.</h2>
     <div class="button-list col-lg-8 offset-lg-2 col-sm-12 col-xs-12 col-md-12">
       <form action="" id="address">
@@ -44,11 +44,11 @@
       <div class="row margin-top">
           <div class="col-md-3 offset-md-3">
               
-              <a href="(N0N MILITARY OPTION) 21B  Apply Now I’m Refinancing  Personal Info  Review Co-Borrower  CONFIRMENED (Edit).html" class="btn" id="btn-back-blue">Back</a>
+              <a (click)="history.back()" class="btn" id="btn-back-blue">Back</a>
           </div>
           <div class="col-md-2">
               
-              <a href="(N0N MILITARY OPTION) 23  Apply Now I’m Refinancing  Personal Info  Income  talk about employment.html" class="btn" id="btn-next-blue">Next</a>
+              <a routerLink="/refinance/income/2" class="btn" id="btn-next-blue">Next</a>
           </div>
       </div>
     </div>
@@ -59,16 +59,16 @@
   </div>
   <!-- click on back button it will goto page 21B section of apply-now-info-review21 -->
   <!-- click on next button it will goto page 23 apply-now-income-employment23 -->
-  <div class="main-content">
+  <div class="main-content" *ngIf="number==2">
     <h2>Let’s talk about employment.</h2>
     <h6 class="narrow-padding">We recommend you provide two-years of employment history. Do you have current or past employment history to add?</h6>
     <div class="button-list margin-top col-lg-6 offset-lg-3 col-sm-12 col-xs-12 col-md-12">
-      <a href="(N0N MILITARY OPTION) 24    Apply Now  I’m Refinancing  Personal Info  Income  current employer.html" class="btn btn-primary btn-style btn-blue">Yes</a>
-      <a href="(N0N MILITARY OPTION) 24    Apply Now  I’m Refinancing  Personal Info  Income  current employer.html" class="btn btn-primary btn-style btn-blue">No</a>
+      <a routerLink="/refinance/income/3" class="btn btn-primary btn-style btn-blue">Yes</a>
+      <a routerLink="/refinance/income/3" class="btn btn-primary btn-style btn-blue">No</a>
       <div class="row">
           <div class="col-md-12 margin-top">
               
-              <a href="(N0N MILITARY OPTION) 22  Apply Now I’m Refinancing  Personal Info  Income.html" class="btn" id="btn-back">Back</a>
+              <a (click)="history.back()" class="btn" id="btn-back">Back</a>
           </div>
       </div>
     </div>
@@ -79,7 +79,7 @@
   </div>
 <!-- click on back button it will goto apply-now-personal-income22 -->
   <!-- click on any button it will goto page 24 apply-now-current-employer24 -->
-  <div class="main-content">
+  <div class="main-content" *ngIf="number==3">
     <h2>Tell us about your most current employer.</h2>
     <div class="button-list col-lg-6 offset-lg-3 col-sm-12 col-xs-12 col-md-12">
       <form action="" id="employer-details">
@@ -115,11 +115,11 @@
       <div class="row">
           <div class="col-md-3 offset-md-3">
               
-              <a href="(N0N MILITARY OPTION) 23  Apply Now I’m Refinancing  Personal Info  Income  talk about employment.html" class="btn" id="btn-back-blue">Back</a>
+              <a (click)="history.back()" class="btn" id="btn-back-blue">Back</a>
           </div>
           <div class="col-md-2">
               
-              <a href="(N0N MILITARY OPTION) 25    Apply Now  I’m Refinancing  Personal Info  Income  compensation.html" class="btn" id="btn-next-blue">Next</a>
+              <a routerLink="/refinance/income/4" class="btn" id="btn-next-blue">Next</a>
           </div>
       </div>
     </div>
@@ -129,7 +129,7 @@
     </div>
   </div>
 
-  <div class="main-content">
+  <div class="main-content" *ngIf="number==4">
     <h2>What’s your title and compensation?</h2>
     <h6>We have to ask! if you’re not exactly sure, your best guess is fine.</h6>
     <div class="button-list margin-top col-lg-6 offset-lg-3 col-sm-12 col-xs-12 col-md-12">
@@ -144,11 +144,11 @@
       <div class="row">
           <div class="col-md-3 offset-md-3">
               
-              <a href="(N0N MILITARY OPTION) 24    Apply Now  I’m Refinancing  Personal Info  Income  current employer.html" class="btn" id="btn-back-blue">Back</a>
+              <a (click)="history.back()" class="btn" id="btn-back-blue">Back</a>
           </div>
           <div class="col-md-2">
               
-              <a href="(N0N MILITARY OPTION) 26    Apply Now I’m Refinancing  Personal Info  Income  compensation.html" class="btn" id="btn-next-blue">Next</a>
+              <a routerLink="/refinance/income/5" class="btn" id="btn-next-blue">Next</a>
           </div>
       </div>
     </div>
@@ -158,21 +158,21 @@
     </div>
   </div>
 
-  <div class="main-content">
+  <div class="main-content" *ngIf="number==5">
     <h2>Great! do you have any other forms of employment?</h2>
     <h6 class="narrow-padding">if you have provided two years of employment history that’s all we need.</h6>
     <div class="button-list margin-top col-lg-6 offset-lg-3 col-sm-12 col-xs-12 col-md-12">
       
       
-      <a href="(N0N MILITARY OPTION) 27 Apply Now I’m Refinancing  Personal Info  Income  co-borrower's title and compensation.html" class="btn btn-primary btn-style btn-blue">Yes, I have more to add</a>
+      <a routerLink="/refinance/income/6" class="btn btn-primary btn-style btn-blue">Yes, I have more to add</a>
       
-      <a href="(N0N MILITARY OPTION) 27 Apply Now I’m Refinancing  Personal Info  Income  co-borrower's title and compensation.html" class="btn btn-primary btn-style btn-blue">No, I don’t have more to add</a>
+      <a routerLink="/refinance/income/6" class="btn btn-primary btn-style btn-blue">No, I don’t have more to add</a>
       
 
       <div class="row">
           <div class="col-md-12 margin-top">
               
-              <a href="(N0N MILITARY OPTION) 25    Apply Now  I’m Refinancing  Personal Info  Income  compensation.html" class="btn" id="btn-back-blue">Back</a>
+              <a routerLink="/refinance/income/5" class="btn" id="btn-back-blue">Back</a>
           </div>
       </div>
     </div>
@@ -181,8 +181,35 @@
       <h5>You have Questions? <span>|</span> We’ll have answers.</h5>
     </div>
   </div>
-
-  <div class="main-content">
+  <div class="main-content" *ngIf="number==6">
+    <h2>What's the co-borrower's title and compensation?</h2>
+    <h6>We have to ask! if you’re not exactly sure, your best guess is fine.</h6>
+    <div class="button-list margin-top col-lg-6 offset-lg-3 col-sm-12 col-xs-12 col-md-12">
+      <form action="" id="employer-details">
+        
+        <input type="text" class="form-control form-style" placeholder="Job Title">
+        <input type="text" class="form-control form-style" placeholder="Estimated Annual Base Salery">
+        <input type="text" class="form-control form-style" placeholder="Estimated Annual Bonus">
+        <input type="text" class="form-control form-style" placeholder="Estimated Annual Commission">
+        <input type="text" class="form-control form-style" placeholder="Estimated Annual Overtime">
+      </form>
+      <div class="row">
+          <div class="col-md-3 offset-md-3">
+              
+              <a routerLink="/refinance/income/5" class="btn" id="btn-back-blue">Back</a>
+          </div>
+          <div class="col-md-2">
+              
+              <a routerLink="/refinance/income/7" class="btn" id="btn-next-blue">Next</a>
+          </div>
+      </div>
+    </div>
+    <div class="content-footer">
+      <p>Already have an account | <a href="">Log in</a></p>
+      <h5>You have Questions? <span>|</span> We’ll have answers.</h5>
+    </div>
+  </div>
+  <div class="main-content" *ngIf="number==7">
     <h2>Great! Does the co-borrower have any other forms of employment?</h2>
     <h6 class="narrow-padding">If you have provided two years of employment history for the co-borrower that's all we need.</h6>
     <div class="button-list margin-top col-lg-6 offset-lg-3 col-sm-12 col-xs-12 col-md-12">  
@@ -191,11 +218,11 @@
       <div class="row">
           <div class="col-md-3 offset-md-3">
               
-              <a href="(N0N MILITARY OPTION) 27 Apply Now I’m Refinancing  Personal Info  Income  co-borrower's title and compensation.html" class="btn" id="btn-back-blue">Back</a>
+              <a routerLink="/refinance/income/6" class="btn" id="btn-back-blue">Back</a>
           </div>
           <div class="col-md-2">
               
-              <a href="(N0N MILITARY OPTION) 29  Apply Now I’m Refinancing  Personal Info  Income  co-borrower sources of income to share.html" class="btn" id="btn-next-blue">Next</a>
+              <a routerLink="/refinance/income/8" class="btn" id="btn-next-blue">Next</a>
           </div>
       </div>
     </div>
@@ -204,16 +231,16 @@
       <h5>You have Questions? <span>|</span> We’ll have answers.</h5>
     </div>
   </div>
-  <div class="main-content">
+  <div class="main-content" *ngIf="number==8">
     <h2>Does the co-borrower have any sources of income to share? <img src="img/info.svg" alt=""></h2>
     <h6 class="narrow-padding">Sources of income can include things like alimony, retirement, and social security. Click the info button to see a complete list. </h6>
     <div class="button-list margin-top col-lg-6 offset-lg-3 col-sm-12 col-xs-12 col-md-12">      
-      <a href="(N0N MILITARY OPTION) 30  Apply Now I’m Refinancing  Personal Info  Income  co-borrower sources of income.html" class="btn btn-primary btn-style btn-blue">Yes</a>
+      <a routerLink="/refinance/income/9" class="btn btn-primary btn-style btn-blue">Yes</a>
       
-      <a href="(N0N MILITARY OPTION) 30  Apply Now I’m Refinancing  Personal Info  Income  co-borrower sources of income.html" class="btn btn-primary btn-style btn-blue">No</a>
+      <a routerLink="/refinance/income/9" class="btn btn-primary btn-style btn-blue">No</a>
       <div class="row">
           <div class="col-md-12 margin-top">              
-              <a href="(N0N MILITARY OPTION) 28 Apply Now I’m Refinancing  Personal Info  Income  co-borrower have any other forms of employment.html" class="btn" id="btn-back-blue">Back</a>
+              <a routerLink="/refinance/income/7" class="btn" id="btn-back-blue">Back</a>
           </div>
       </div>
     </div>
@@ -222,7 +249,7 @@
       <h5>You have Questions? <span>|</span> We’ll have answers.</h5>
     </div>
   </div>
-  <div class="main-content">
+  <div class="main-content" *ngIf="number==9">
     <h2>Which best describes the source of the co-borrower's income?</h2>
     
     <div class="button-list col-lg-6 offset-lg-3 col-sm-12 col-xs-12 col-md-12">
@@ -234,15 +261,15 @@
       <div class="row margin-top">
           <div class="col-md-2 offset-md-1 col-lg-2 offset-lg-1 col-sm-2 offset-sm-1 col-xs-2 offset-xs-1">
               
-              <a href="(N0N MILITARY OPTION) 29  Apply Now I’m Refinancing  Personal Info  Income  co-borrower sources of income to share.html" class="btn" id="btn-back-blue">Back</a>
+              <a routerLink="/refinance/income/8" class="btn" id="btn-back-blue">Back</a>
           </div>
           <div class="col-md-2 offset-md-1 col-lg-2 offset-lg-1 col-sm-2 offset-sm-1 col-xs-2 offset-xs-1">
               
-              <a href="(N0N MILITARY OPTION) 31  Apply Now I’m Refinancing  Personal Info  Income  co-borrower any other sources of income to share.html" class="btn" id="btn-next-blue">Next</a>
+              <a routerLink="/refinance/income/10" class="btn" id="btn-next-blue">Next</a>
           </div>
           <div class="col-md-2 offset-md-1 col-lg-2 offset-lg-1 col-sm-2 offset-sm-1 col-xs-2 offset-xs-1">
               
-              <a href="(N0N MILITARY OPTION) 31  Apply Now I’m Refinancing  Personal Info  Income  co-borrower any other sources of income to share.html" class="btn" id="btn-back-blue">Skip</a>
+              <a routerLink="/refinance/income/10" class="btn" id="btn-back-blue">Skip</a>
           </div>
       </div>
     </div>
@@ -251,21 +278,21 @@
       <h5>You have Questions? <span>|</span> We’ll have answers.</h5>
     </div>
   </div>
-  <div class="main-content">
+  <div class="main-content" *ngIf="number==10">
     <h2>Does the co-borrower have any other sources of income?</h2>
     
     <div class="button-list margin-top col-lg-6 offset-lg-3 col-sm-12 col-xs-12 col-md-12">
       
       
-      <a href="(N0N MILITARY OPTION) 32  Apply Now I’m Refinancing  Personal Info  Income  co-borrower income Review.html" class="btn btn-primary btn-style btn-blue">Yes</a>
+      <a routerLink="/refinance/income/11" class="btn btn-primary btn-style btn-blue">Yes</a>
       
-      <a href="(N0N MILITARY OPTION) 32  Apply Now I’m Refinancing  Personal Info  Income  co-borrower income Review.html" class="btn btn-primary btn-style btn-blue">No</a>
+      <a routerLink="/refinance/income/11" class="btn btn-primary btn-style btn-blue">No</a>
       
 
       <div class="row">
           <div class="col-md-12 margin-top">
               
-              <a href="(N0N MILITARY OPTION) 30  Apply Now I’m Refinancing  Personal Info  Income  co-borrower sources of income.html" class="btn" id="btn-back-blue">Back</a>
+              <a routerLink="/refinance/income/9" class="btn" id="btn-back-blue">Back</a>
           </div>
       </div>
     </div>
@@ -275,7 +302,7 @@
     </div>
   </div>
 
-  <div class="main-content">
+  <div class="main-content" *ngIf="number==11">
     <h2>Let's do a quick review of your income. Look good?</h2>
     <div class="content-area">
       <div class="row">
@@ -284,7 +311,7 @@
         </div>
         <div class="col-md-4 right-align">
           
-          <a href="(N0N MILITARY OPTION) 32A  Apply Now I’m Refinancing  Personal Info  Income  co-borrower income EDIT Window.html" class="btn" id="btn-edit">Edit</a>
+          <a routerLink="/refinance/income/12" class="btn" id="btn-edit">Edit</a>
         </div>
       </div>
       <div class="row">
@@ -354,7 +381,7 @@
   <!-- click next button it will goto page 33 apply-now-assets33 -->
 
   <!-- section 32A starts -->
-  <div class="main-content">
+  <div class="main-content" *ngIf="number==12">
     <h2>Let's do a quick review of your income. Look good?</h2>
     <div class="content-area">
       <div class="row">
@@ -362,7 +389,7 @@
           <h6>Co-borrower Employment</h6>
         </div>
         <div class="col-md-4 right-align">
-          <button type="button" class="btn" id="btn-edit">Done</button>
+          <a routerLink="/refinance/income/11" type="button" class="btn" id="btn-edit">Done</a>
         </div>
       </div>
       <div class="row">
